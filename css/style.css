@@ -1,0 +1,108 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .signin-amazon-btn{
+      background-color: #F3D078;
+      /* background-color: #e9b362; */
+      color: rgb(19, 19, 19);
+      border: 0.5px solid #333333;
+  }
+  .signin-amazon-btn:hover{
+      background-color: #F8991D;
+      /* background-color: #e9b362; */
+      color: rgb(19, 19, 19);
+      border: 0.5px solid #333333;
+  }
+  .create-account-amazon-btn{
+      background-color: rgba(243, 243, 243, 0.993);
+      color: rgb(19, 19, 19);
+      border: 0.5px solid #333333;
+  }
+  .create-account-amazon-btn:hover{
+      background-color: rgba(199, 197, 197, 0.993);
+      color: rgb(19, 19, 19);
+      border: 0.5px solid #333333;
+  }
+  .amazon-background-color{
+      background-color: #F8991D;
+      color: #333333;
+  }
+  .amazon-color{
+      color: #F8991D;
+  }
+  .form-control:focus {
+    border-color: #F8991D;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .remove-focus-line:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  /* Home page */
+.btn-outline-amazon{
+    background-color: transparent;
+    border: 0.5px solid #F8991D;
+    color: #333333;
+}
+.light-link{
+    color: #fff;
+}
+.dark-link{
+    color: #333333;
+}
+.light-link:hover{
+    color: #F8991D;
+    text-decoration: none;
+}
+.dark-link:hover{
+    color: #F8991D;
+    text-decoration: none;
+}
+.hover:hover{
+    color: #F8991D;
+    text-decoration: none;
+}
+.bg-amazon{
+    background-color: #232F3E;
+    color: #fff;
+}
+.jumbotron-home{
+    height: 70vh;
+    background-image: url('../images/jumbotron-home.jpg');
+    color: #fff;
+    border-radius: 0;
+    border: none;
+}
+.text-font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    margin: 30px 0px;   
+}
+.text-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #fff;  
+}
+.fa-icon-lg{
+    color: #232F3E;
+    font-size: 30px;
+    cursor: pointer;
+}
+.cursor-pointer:hover{
+    cursor: pointer;
+}
