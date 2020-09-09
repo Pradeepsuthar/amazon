@@ -227,7 +227,7 @@
             </div>
 
             <!-- Sub Categories Horizontal Row -->
-            <div class="bg-white container-fluid p-4" style="position: relative;">
+            <div class="bg-white container-fluid p-4 mb-3" style="position: relative;">
                 <div class="d-flex">
                     <div class="my-auto">
                         <h5 class="mr-4">Discover Amazon</h5>
@@ -236,7 +236,7 @@
                         <a href="#">Click to learn more</a>
                     </div>
                 </div>
-                <div class="category__horizontal__row px-4" id="subCategory">
+                <div class="horizontal__scroll__row px-4" id="horizontal__scroll__row">
                     <img
                         src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Projects/HelpPage/BubbleShoveler/English/Fuji_Bubble_8Languages_en_US_updated_1x._CB445837675_.png">
                     <img
@@ -266,6 +266,52 @@
                         </svg></button>
                 </div>
             </div>
+            <!-- Best Sellers in Kitchen Horizontal Row -->
+            <div class="bg-white container-fluid p-4 mb-3" style="position: relative;">
+                <div class="d-flex">
+                    <div class="my-auto">
+                        <h5 class="mr-4">Best Sellers in Kitchen</h5>
+                    </div>
+                    <div class="my-auto">
+                        <a href="#">Shop Now</a>
+                    </div>
+                </div>
+                <div class="horizontal__scroll__row px-4" id="products__horizontal__scroll__row">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41IF4qzFnEL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41TWHhFUC3L._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41AZOLr72bL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/313I+J9L3jL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51PxpmVf51L._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41zr88j+byL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41hyN1iiHfL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41N8AxIJq4L._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51XFpX+XFpL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41NPVXxKO3L._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41Kf0mndKyL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/419mxWvwrcL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41MUBAPIW7L._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41fgkBDrkxL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/31jy5fSzyRL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51MmtM-IScL._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/31FZDSUNb3L._AC_SY200_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41zR9OmibVL._AC_SY200_.jpg">
+                </div>
+                <div class="left__control">
+                    <button id="p_slideLeft"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-left text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg></button>
+                </div>
+                <div class="right__control">
+                    <button id="p_slideRight"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-right text-dark" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg></button>
+                </div>
+            </div>
 
 
         </div>
@@ -275,14 +321,23 @@
 
     <!-- Optional JavaScript -->
     <script>
+        // For category
         const buttonRight = document.getElementById('slideRight');
         const buttonLeft = document.getElementById('slideLeft');
-
         buttonRight.onclick = function () {
-            document.getElementById('subCategory').scrollLeft += 150;
+            document.getElementById('horizontal__scroll__row').scrollLeft += 200;
         };
         buttonLeft.onclick = function () {
-            document.getElementById('subCategory').scrollLeft -= 150;
+            document.getElementById('horizontal__scroll__row').scrollLeft -= 200;
+        };
+        // For prodcuts
+        const p_buttonRight = document.getElementById('p_slideRight');
+        const p_buttonLeft = document.getElementById('p_slideLeft');
+        p_buttonRight.onclick = function () {
+            document.getElementById('products__horizontal__scroll__row').scrollLeft += 200;
+        };
+        p_buttonLeft.onclick = function () {
+            document.getElementById('products__horizontal__scroll__row').scrollLeft -= 200;
         };
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
