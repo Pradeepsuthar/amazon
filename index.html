@@ -76,7 +76,7 @@
     </nav>
 
     <!-- Home banner -->
-    <div class="jumbotron jumbotron-fluid p-0 m-0">
+    <div class="jumbotron jumbotron-fluid pt-0 m-0">
         <div class="container-fluid px-0">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -126,6 +126,7 @@
             </div>
         </div>
         <div class="container-fluid px-4">
+            <!-- Categories -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <div class="col px-2 mb-3">
                     <div class="card products__card">
@@ -223,14 +224,67 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <!-- Sub Categories Horizontal Row -->
+            <div class="bg-white container-fluid p-4" style="position: relative;">
+                <div class="d-flex">
+                    <div class="my-auto">
+                        <h5 class="mr-4">Discover Amazon</h5>
+                    </div>
+                    <div class="my-auto">
+                        <a href="#">Click to learn more</a>
+                    </div>
+                </div>
+                <div class="category__horizontal__row px-4" id="subCategory">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Projects/HelpPage/BubbleShoveler/English/Fuji_Bubble_8Languages_en_US_updated_1x._CB445837675_.png">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/October/BubbleShoveler/AIS_Bubble_Currency_en_US_1X._CB451228332_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/October/BubbleShoveler/AIS_Bubble_SecurePayment_en_US_1X._CB451228335_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/October/BubbleShoveler/AIS_Bubble_ImportFees_en_US_1X._CB451228332_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/October/BubbleShoveler/AIS_Bubble_TrackPackage_en_US_1X._CB451228335_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/October/BubbleShoveler/AIS_Bubble_247CS_en_US_1X._CB451228332_.jpg">
+                </div>
+                <div class="left__control">
+                    <button id="slideLeft"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-left text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg></button>
+                </div>
+                <div class="right__control">
+                    <button id="slideRight"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-right text-dark" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg></button>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
 
 
     <!-- Optional JavaScript -->
+    <script>
+        const buttonRight = document.getElementById('slideRight');
+        const buttonLeft = document.getElementById('slideLeft');
+
+        buttonRight.onclick = function () {
+            document.getElementById('subCategory').scrollLeft += 150;
+        };
+        buttonLeft.onclick = function () {
+            document.getElementById('subCategory').scrollLeft -= 150;
+        };
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
